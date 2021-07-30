@@ -1,0 +1,368 @@
+body{
+    margin: 0,15px;
+    padding: 0;
+   
+    
+}
+body a:hover{
+  background-color:brown;
+}
+header,footer{
+    background-color:#228b22;
+    color: rgb(250, 241, 241);
+}
+.navbar {
+    overflow: hidden;
+    font-size: 15px;
+    
+    }
+  
+  .navbar a {
+    float:right;
+    font-size: 16px;
+    color: rgb(250, 241, 241);   
+  }
+  .navbar ul {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  .navbar ul li{
+   
+    float: right;
+
+  }
+  li a ,.dropbtn{
+    display: inline-block;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: right;
+    overflow: hidden;
+    z-index: initial;
+  }
+  
+  p
+  {padding: 5px;
+  margin: 15px;}
+  
+  .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:rgb(250, 241, 241);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:brown;
+  }
+  li .dropdown{
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(250, 241, 241);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .gallery {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    background-color: #FFFFFF;
+    /* [disabled]min-width: 400px;
+  */
+    padding-bottom: 35px;
+    padding-top: 0px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+  }
+  .thumbnail {
+    width: 25%;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+  }
+  .gallery .thumbnail h4 {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #52BAD5;
+  }
+  .gallery .thumbnail p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    color: #A3A3A3;
+  }
+  .pics{
+    display: flex;
+  }
+ 
+ #foot1{
+   display: flex;
+   justify-content: space-around;
+ }
+ #foot1 ul{
+   list-style-type: none;
+ }
+ #foot1 a{
+   text-decoration: none;
+   color: rgb(250, 241, 241);
+
+ }
+ #socials,.train-f,#form,#skills{
+   display: block;
+   padding: 2px;
+   text-align: center;
+ }
+ .part {
+  background-image:url("images/dey.png") ;
+  height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+  
+ }
+ #foot2 {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  color: rgb(250, 241, 241);
+  text-align: center;
+}
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.slideshow-container {
+  width:100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.port{
+  display: flex;
+  padding: 5px;
+  justify-content:space-between;
+  max-height: 250px;
+}
+.port img{
+  width: 250px;
+  height:250px;
+  border-radius: 25%;
+  box-shadow: #717171;
+}
+.po1{
+  position: relative;
+  background-color: rgba(250, 242, 242, 0.363);
+  display:flexbox;
+  margin: 15px;
+  padding: 5px;
+  }
+
+.po1 h3{
+  text-align: center;
+}
+ .train{
+  padding: 5px;
+  margin:2px;
+  max-width: 20%;
+  max-height: 18%;
+}
+#wrapper{
+  margin: 0%;
+  background-image: url("../images/dey.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: fit-content;
+  
+
+}
+#animal,#equipments,#crop{
+  width: 100%;
+  display: inline-flex;
+  }
+  #cursive{
+    color: brown;
+    font-family: Brush Script MT ;
+    font-weight: bolder;
+  }
+  
+  .mon{
+    display:flex;
+    width: 100%;
+
+  }
+  .testi{
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 80%;
+    
+   }
+section
+{
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  -moz-box-shadow: inset 0 0 10px #777777;
+  -webkit-box-shadow: inset 0 0 10px #777777;
+  box-shadow: inset 0 0 10px #777777;
+  
+}
+.part{
+  background-image: url("/images/dey.png");
+  height: fit-content;
+}
+.harcourt{
+  max-height: 250px;
+  background-color: rgba(165, 42, 42, 0.158);
+}
+.stats{
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+#who{
+  background-color: rgba(165, 42, 42, 0.158);
+}
+form{
+  background-color: rgba(250, 204, 204, 0.158) ;
+}
+.abe{
+  font-size:25px;
+  text-align: justify;
+  padding: 15px;
+  margin: 20px;
+  background-color:rgba(245, 245, 245, 0.651) ;
+}
