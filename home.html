@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css">
        <title>home</title>
+            <script>
+              function checkPassword() {
+              var password = document.getElementById("passwordBox");
+              var passwordEntered = password.value;
+              }
+              </script>
 </head>
 <body>
   <header>
+    
     <div class="logo">
         <h1>GONA</h1>
     </div>
+    <button class="log"  onclick="form.html">login</button>
     <div class="navbar">
       <ul> 
           <li><a href="home.html">Home</a></li>
@@ -27,66 +36,16 @@
             <a href="#crops">Farming Equipment</a>
         </div>
     </li></ul>
+  </header>
+   
 </div>
-    
-</header>
 <section>
-  <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/francesco-gallarotti-ruQHpukrN7c-unsplash.jpg" style="width:100%">crop Farming
-      <div class="text">Crops</div>
-    </div>
+  <video autoplay muted loop >
+      <source src="images/Pexels Videos 3653_1.mp4" type="video/mp4"
+      width="100%" height="500px" preload="auto"
+      >
+    </video>
   
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/jean-wimmerlin-iasJ7GvIhz0-unsplash.jpg" style="width:100%">
-      <div class="text">Farm machinery</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="images/chicken-3727097__480.webp" style="width:100%">
-      <div class="text">Animal Husbandry</div>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="images/farm.jpg" style="width:100%">
-        <div class="text">phones</div>
-      </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
- 
-</div>
-  <script>var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-</script>
-</div>
 </section>
 <section>
   <div id="who">
@@ -128,31 +87,32 @@ we at gona aim to make the journey easier for every young aspiring agric entrepr
     <H2>TESTIMONIALS</H2>
     <div class="mon">
     <div class="testi">
-      <span id="cursive"> <h3>"Gona changed My life"</h3>
+      <span id="cursive"> <h3>"GONA changed My life"</h3>
       <sub>ace</sub></span>
       <img src="images/digitalfar.jpg" alt="" srcset="">
       
     </div>
 
     <div class="testi">
-     <span id="cursive"> <h3>"i probably would still be looking for a job"</h3>
+     <span id="cursive"> <h3>"i probably would still be looking for a job thank you GONA"</h3>
       <sub>jaja<sub></span>
       <img src="images/another farmer.jpg" alt="" srcset="">
 
     </div>
 
     <div class="testi">
-      <span id="cursive"> <h3>"i wouldnt be where i am, today without  GONA"</h3>
-      <sub>paul</sub></span>
+      <span id="cursive"> <h3>"i wouldnt be where i am, today without GONA"</h3>
+      <sub>paul</sub>
+    </span>
       <img src="images/farmerbasket.jpg" alt="" srcset="">
           </div>
     
-    <dIv class="testi">
-      <span id="cursive"><h3>"i am so grateful to Gona"</h3>
+    <div class="testi">
+      <span id="cursive"><h3>"i am so grateful to GONA"</h3>
         <sub>ryder</sub> </span>
       <img src="images/lady farmer.jpg" alt="" srcset="">
       
-    </dIv>
+    </div>
   </div>
   </section>
 <section class="part">
@@ -216,23 +176,24 @@ we at gona aim to make the journey easier for every young aspiring agric entrepr
       </form>
 </section>
 <section class="harcourt">
+  <h3>PARTNERS</h3>
   <div class="port">
+    
     <img src="images/wfp.jpg" alt="" srcset="">
-    <img src="images/tf.jpg" alt="" srcset="">
+    <img src="images/tony.jpg" alt="" srcset="">
     <img src="images/R.jpg" alt="" srcset="">
     
   </div>
 </section>
 
-</div>
+
 <footer>
     <div id="foot1">
         <div id ="skills">
             <h5>Services</h5>
             <ul>
-                
-                <li><a href="#"> Training </a></l1>
-                <li><a href="#">Storage</li>
+                <li><a href="#">Training</a></l1>
+                <li><a href="#">Storage</a></li>
                 <li><a href="#">Loans</a></li>
                 <li><a href="#">Export</a></li>
             </ul>
@@ -257,7 +218,8 @@ we at gona aim to make the journey easier for every young aspiring agric entrepr
             <input type="text" name="" id="" placeholder="Name" class="name"></br>
             <input type="Email" name="" id="" placeholder="Email" class="Email"></br>
             <a href="mailto:shispot422@gmail.com"><input type="button" value="submit" class="submit"></a>
-    </div>    
+    </div>
+   </div>
     <div id="foot2">
       2021 all rights reserved copyright of abubakar <a href="#">awode </a> 
     </div>
